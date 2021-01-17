@@ -36,6 +36,12 @@
                 alert("온도도 입력을 해 주셔야 합니다.")
                 return false;
             }
+            if (temp_1 > 37) {
+                alert("온도가 쫌 높은데여..? 집에 가셔야겠습니다.")
+            }
+            if(temp_1 <35) {
+                alert("뭐 이렇게 낮아요??;;")
+            }
             if (document.getElementById("agree1").checked != true) {
                 alert("개인정보 동의를 해 주셔야 합니다.");
             }else{
