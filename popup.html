@@ -65,10 +65,12 @@
             }
             if(temp_1 <=37 && temp_1 >=35) {
                 alert(call_name+"님 어서오세요. 현재 체온은 정상입니다. :)");
+                window.location.href ="about:blank";
+
                 
             }else{
                 alert("무엇인가 잘못되었어요.");
-                window.location.href ="about:blank";
+                return false;
 
             }
         }
