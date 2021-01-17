@@ -38,6 +38,8 @@
         function name_1() {
             var c_name = document.getElementById("nm2").value;
             var temp_1 = document.getElementById("tp2").value;
+            x = c_name.length
+            var call_name = c_name.substr(x-2,x);
             
 
             if (c_name == "") {
@@ -59,7 +61,7 @@
             if (document.getElementById("agree1").checked != true) {
                 alert("개인정보 동의를 해 주셔야 합니다.");
             }else{
-                alert(c_name+"님 반갑습니다. 현재 체온은 "+temp_1+"도 입니다.");
+                alert(call_name+"님 어서오세요. 현재 체온은 정상입니다. :)");
 
             }
         }
@@ -76,7 +78,7 @@
             </p>
             <p><b> ★ 성명 : </b><input type="text" id="nm2"></p>
             <p><b> ★ 체온 : </b><input type="text" id="tp2"></p><br>
-            <input type="checkbox" id="agree1" value="agree_1"> <b>개인정보 수집에 동의합니다.</b><br><br><br>
+            <input type="checkbox" id="agree1" value="agree_1"> <b>개인정보 수집에 동의합니다.</b><br><br>
 
 
         </div>
