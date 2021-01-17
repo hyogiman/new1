@@ -16,6 +16,7 @@
         width: 100%;
         border: 1px solid rgb(8, 6, 138);
         background-color: rgb(204, 219, 248);
+        padding: 0px 15px;
         }
         .btcnt{
             display: flex;
@@ -49,6 +50,7 @@
             if (temp_1 == "") {
                 alert("온도도 입력을 해 주셔야 합니다.");
                 return false;
+
             }
             if (temp_1 > 37) {
                 alert("온도가 쫌 높은데여..? 집에 가셔야겠습니다.");
@@ -62,13 +64,11 @@
                 alert("개인정보 동의를 해 주셔야 합니다.");
             }else{
                 alert(call_name+"님 어서오세요. 현재 체온은 정상입니다. :)");
+                window.location.href ="about:blank";
 
             }
         }
-
-
     </script>
-
     </head>
     <body>  
         <div class="cntnt">
@@ -79,7 +79,6 @@
             <p><b> ★ 성명 : </b><input type="text" id="nm2"></p>
             <p><b> ★ 체온 : </b><input type="text" id="tp2"></p><br>
             <input type="checkbox" id="agree1" value="agree_1"> <b>개인정보 수집에 동의합니다.</b><br><br>
-
 
         </div>
         <div class="btcnt">
