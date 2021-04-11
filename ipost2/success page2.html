@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Success Page 2
+    </title>
+    <meta charset="utf-8">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Single+Day&display=swap');
+        .cntnt {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid rgb(64, 2, 70);
+        background-color: rgb(236, 179, 243);
+        padding: 0px 15px;
+        }
+        .btcnt{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        #bt1 {
+            background-color: rgb(0, 14, 54); 
+            border: none; 
+            color:white; 
+            padding: 15px 30px; 
+            text-align:center; 
+            font-size: 16px; 
+            margin: 4px 4px; 
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+
+        function datewrite() {
+            const trade_date = new Date().toLocaleString()
+            console.log(trade_date)
+        }
+
+
+    </script>
+    </head>
+    <body>  
+        <div class="cntnt">
+            <h1 style="font-family: 'jua', sans-serif; text-align: center;">2팀 축하합니다!<br>정답을 맞히셨습니다.</h1>
+            <p style="width:auto; text-align: center; word-break: keep-all; font-size: 25px; font-family: 'Single Day', cursive;">
+            지금 화면을 캡쳐해서 담당자에게 보내시기 바랍니다.<br><br>성공시간</p>
+            <p style="width:auto; text-align: center; word-break: keep-all; font-size: 25px; font-family: 'Single Day', cursive;">
+                <script>
+                    let today = new Date();   
+                    document.write(today.toLocaleString() + '<br><br>');
+           
+                </script>
+            </p>
+
+        </div>
+
+    </body>
+</html>
